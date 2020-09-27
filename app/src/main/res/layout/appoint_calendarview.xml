@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/dp_8"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_80"
+     >
+
+        <ImageView
+            android:id="@+id/left"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:paddingHorizontal="@dimen/dp_17"
+            android:paddingVertical="@dimen/dp_13"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/back_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.edencity.store.custum.MyMediumTextView
+            android:id="@+id/calendar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="2018年"
+            android:textColor="#333333"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/right"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginEnd="8dp"
+            android:padding="@dimen/dp_13"
+            app:layout_constraintBottom_toBottomOf="@+id/calendar_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/calendar_title"
+            android:src="@drawable/fragmentation_ic_right" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/calendar_week_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_42"
+        android:gravity="center_vertical"
+        android:layout_marginHorizontal="@dimen/dp_8"
+        android:orientation="horizontal"
+        >
+        <com.edencity.store.custum.MyMediumTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="S"
+            android:textAlignment="center"
+            android:textColor="#333333"
+            android:textSize="@dimen/text_size_15"
+            android:textStyle="bold" />
+
+        <com.edencity.store.custum.MyMediumTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="M"
+            android:textAlignment="center"
+            android:textColor="#333333"
+            android:textSize="@dimen/text_size_15"
+            android:textStyle="bold" />
+
+        <com.edencity.store.custum.MyMediumTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="T"
+            android:textAlignment="center"
+            android:textColor="#333333"
+            android:textSize="@dimen/text_size_15"
+            android:textStyle="bold" />
+
+        <com.edencity.store.custum.MyMediumTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="W"
+            android:textAlignment="center"
+            android:textColor="#333333"
+            android:textSize="@dimen/text_size_15"
+            android:textStyle="bold" />
+
+        <com.edencity.store.custum.MyMediumTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="T"
+            android:textAlignment="center"
+            android:textColor="#333333"
+            android:textSize="@dimen/text_size_15"
+            android:textStyle="bold" />
+
+        <com.edencity.store.custum.MyMediumTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="F"
+            android:textAlignment="center"
+            android:textColor="#333333"
+            android:textSize="@dimen/text_size_15"
+            android:textStyle="bold" />
+
+        <com.edencity.store.custum.MyMediumTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="S"
+            android:textAlignment="center"
+            android:textColor="#333333"
+            android:textSize="@dimen/text_size_15"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginVertical="@dimen/dp_5"
+        android:layout_marginHorizontal="@dimen/dp_12"
+        android:background="#eaeaea"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/calendar_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+       />
+</LinearLayout>

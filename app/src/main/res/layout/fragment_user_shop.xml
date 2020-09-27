@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".user.fragment.UserShopFragment">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_80"
+        android:paddingTop="@dimen/dp_20"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/dp_44"
+            android:layout_height="0dp"
+            android:padding="@dimen/dp_18"
+            app:layout_constraintBottom_toTopOf="@+id/view23"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back_black" />
+
+        <com.edencity.store.custum.MyMediumTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="门店信息"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_18"
+            app:layout_constraintBottom_toBottomOf="@+id/back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/back" />
+
+        <View
+            android:id="@+id/view23"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_10"
+            android:background="#f5f5f5"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="1dp"
+
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/dp_20"
+                    android:visibility="visible">
+
+
+
+                    <com.edencity.store.custum.MyMediumTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="门店门面"
+                        android:textColor="@color/text_black"
+                        android:textSize="16sp" />
+                    <ImageView
+                        android:id="@+id/shop_img"
+                        android:layout_width="@dimen/dp_100"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="@dimen/dp_12"
+                        android:background="@drawable/bg_card"
+                        android:gravity="center_vertical|right"
+                        android:scaleType="centerCrop" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/dp_20">
+
+                    <com.edencity.store.custum.MyMediumTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="门店名称"
+                        android:textColor="@color/text_black"
+                        android:textSize="16sp" />
+
+                    <com.edencity.store.custum.MyNormalTextView
+                        android:id="@+id/shop_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="小龙炊火锅"
+                        android:textColor="@color/text_gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/dp_20">
+
+                    <com.edencity.store.custum.MyMediumTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="门店品类"
+                        android:textColor="@color/text_black"
+                        android:textSize="16sp" />
+
+                    <com.edencity.store.custum.MyNormalTextView
+                        android:id="@+id/shop_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/dp_5"
+                        android:gravity="center_vertical|right"
+                        android:text="美食-火锅-四川火锅"
+                        android:textColor="@color/text_gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/dp_20"
+                    android:visibility="visible">
+
+                    <com.edencity.store.custum.MyMediumTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="门店地址"
+                        android:textColor="@color/text_black"
+                        android:textSize="16sp" />
+
+                    <com.edencity.store.custum.MyNormalTextView
+                        android:id="@+id/shop_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/dp_5"
+                        android:gravity="center_vertical|right"
+                        android:text="山西-晋中-榆次"
+                        android:textColor="@color/text_gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/dp_20">
+
+                    <com.edencity.store.custum.MyMediumTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="详细地址"
+                        android:textColor="@color/text_black"
+                        android:textSize="16sp" />
+
+                    <com.edencity.store.custum.MyNormalTextView
+                        android:id="@+id/address_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="伊甸城4号楼2F506"
+                        android:textColor="@color/text_gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/dp_20">
+                    <com.edencity.store.custum.MyMediumTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="营业状态"
+                        android:textColor="@color/text_black"
+                        android:textSize="16sp" />
+
+                    <RadioGroup
+                        android:id="@+id/radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/btn1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/dp_22"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/checkbox_style"
+                            android:drawablePadding="@dimen/dp_8"
+                            android:text="营业中"
+                            android:textColor="@drawable/selector_tab_text66"
+                            android:textSize="@dimen/sp_15" />
+
+                        <RadioButton
+                            android:id="@+id/btn2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/checkbox_style"
+                            android:drawablePadding="@dimen/dp_8"
+                            android:text="未营业"
+                            android:textColor="@drawable/selector_tab_text66"
+                            android:textSize="@dimen/sp_15" />
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="1dp"
+
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/dp_20">
+
+                    <com.edencity.store.custum.MyMediumTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="营业时间"
+                        android:textColor="@color/text_black"
+                        android:textSize="16sp" />
+
+                    <com.edencity.store.custum.MyNormalTextView
+                        android:id="@+id/shop_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@drawable/next"
+                        android:ellipsize="end"
+                        android:drawablePadding="@dimen/dp_8"
+                        android:gravity="center_vertical|right"
+                        android:text="周一至周日(10:00-14:00 16:00-23:00)"
+                        android:textColor="@color/text_gray"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/dp_20">
+
+                    <com.edencity.store.custum.MyMediumTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_60"
+                        android:gravity="center_vertical"
+                        android:text="设施服务"
+                        android:textColor="@color/text_black"
+                        android:textSize="16sp" />
+
+                    <com.edencity.store.custum.flowlayout.TagFlowLayout
+                        android:id="@+id/flv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <com.edencity.store.custum.MyMediumTextView
+                    android:id="@+id/save"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_marginHorizontal="@dimen/dp_60"
+                    android:layout_marginTop="@dimen/dp_50"
+                    android:layout_marginBottom="@dimen/dp_50"
+                    android:background="@drawable/text_bg_blue"
+                    android:gravity="center"
+                    android:text="保存"
+                    android:textColor="@color/white" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_36"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.edencity.store.custum.MyNormalTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="想修改相关信息？"
+                        android:textColor="@color/text_gray"
+                        android:textSize="11sp" />
+
+                    <com.edencity.store.custum.MyNormalTextView
+                        android:id="@+id/chat_us"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|right"
+                        android:text="联系客服"
+                        android:textColor="@color/blue_nomal"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</android.support.constraint.ConstraintLayout>

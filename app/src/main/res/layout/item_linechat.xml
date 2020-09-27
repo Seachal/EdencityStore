@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/first_bg" />
+
+    <com.edencity.store.custum.MyMediumTextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_160"
+        android:gravity="center"
+        android:text="56700.00"
+        android:textColor="@color/blue_nomal"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_10"
+        android:background="#f5f5f5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:background="#f5f5f5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <com.edencity.store.custum.MyMediumTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="实时客单价"
+        android:textColor="#666666"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.edencity.store.custum.MyMediumTextView
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="查看详情"
+        android:textColor="@color/blue_nomal"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/title" />
+    <!--<com.veken.chartview.view.LineChartView
+        android:id="@+id/chart_view"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_200"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginEnd="16dp"
+        app:axisMarginHeight="@dimen/dp_2"
+        app:clickBgColor="@color/blue_nomal"
+        app:clickable="true"
+        app:connectLineColor="#3287F6"
+        app:defaultStrokeWidth="0.5dp"
+        app:defaultTextSize="10sp"
+        app:endColor="@color/endColor"
+
+        app:isNeedBg="true"
+        app:isNeedDrawConnectYDataLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:pointClickRadius="0.5dp"
+        app:pointDefaultRadius="0dp"
+        app:pointMarginHeight="@dimen/dp_5"
+        app:startColor="@color/startColor"
+        app:xLableTextColor="#666666"
+        app:yLableTextColor="#666666" />-->
+</android.support.constraint.ConstraintLayout>

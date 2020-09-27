@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4d79fb</color>
+    <color name="colorPrimaryDark">#4d79fb</color>
+    <color name="colorAccent">#4d79fb</color>
+
+    <color name="bg_main">#f0f0f0</color>
+
+    <color name="clear">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blue">#0000FF</color>
+
+    <color name="text_black">#202020</color>
+    <color name="text_blue">#4d79fb</color>
+    <color name="text_gray">#909090</color>
+    <color name="tab_gray">#707070</color>
+    <color name="tab_blue">#2b7df0</color>
+    <color name="blue_nomal">#3287F6</color>
+    <color name="yx_f6f6">#f6f6f6</color>
+
+    <!--日历-->
+    <color name="appoint_calender_bg_start">#FF25A4CE</color>
+    <color name="appoint_calender_bg_end">#FF55CACE</color>
+    <color name="date_today">#FFFFF95B</color>
+    <color name="date_time_bg">#FF9F20</color>
+    <color name="date_time_tv">#FF1AA5C0</color>
+    <color name="date_duration_bg">#FF27A5BE</color>
+    <color name="transparent40_white">#66ffffff</color>
+    <color name="transparent80_white">#CCffffff</color>
+    <color name="blue_sky">#EEF4F9</color>
+</resources>

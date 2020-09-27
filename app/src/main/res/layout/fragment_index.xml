@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/frag"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        >
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/tab_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="3dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/dp_5"
+    >
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:id="@+id/radiobutton_firstpage"
+            android:drawableTop="@drawable/tab_firstpage"
+            android:text="@string/firstpage"
+            android:gravity="center"
+            android:visibility="visible"
+            android:drawablePadding="@dimen/dp_4"
+            android:textColor="@drawable/tab_text_color"
+            android:textSize="@dimen/sp_10"
+            android:textStyle="normal">
+        </RadioButton>
+
+       <!-- <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_36"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:id="@+id/radiobutton_check"
+            android:src="@mipmap/home_yes"
+            android:gravity="center">
+        </ImageView>-->
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:id="@+id/radiobutton_notification"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="@dimen/dp_4"
+            android:drawableTop="@drawable/tab_notification"
+            android:gravity="center"
+            android:text="经营统计"
+            android:textColor="@drawable/tab_text_color"
+            android:textSize="@dimen/sp_10"
+            android:textStyle="normal">
+        </RadioButton>
+        <RadioButton
+            android:layout_width="0dp"
+            android:id="@+id/radiobutton_msg"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="@dimen/dp_4"
+            android:drawableTop="@drawable/tab_msg"
+            android:gravity="center"
+            android:text="消息"
+            android:textColor="@drawable/tab_text_color"
+            android:textSize="@dimen/sp_10"
+            android:textStyle="normal">
+        </RadioButton>
+
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="@dimen/dp_4"
+            android:id="@+id/radiobutton_shopcart"
+            android:drawableTop="@drawable/tab_shopcart"
+            android:gravity="center"
+            android:text="@string/shopcart"
+            android:textColor="@drawable/tab_text_color"
+            android:textSize="@dimen/sp_10"
+            android:textStyle="normal">
+        </RadioButton>
+
+    </RadioGroup>
+
+</LinearLayout>

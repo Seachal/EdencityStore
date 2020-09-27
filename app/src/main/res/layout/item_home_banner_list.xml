@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.edencity.store.custum.RoundImageView15dp
+            android:id="@+id/item_iv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_150"
+            android:layout_marginHorizontal="@dimen/dp_16"
+            android:layout_marginVertical="@dimen/dp_8"
+            android:scaleType="centerCrop" />
+
+        <com.edencity.store.custum.MyNormalTextView
+            android:id="@+id/will_join"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_32"
+            android:layout_marginRight="@dimen/dp_32"
+            android:background="@drawable/will_join"
+            android:paddingHorizontal="@dimen/dp_12"
+            android:paddingVertical="@dimen/dp_4"
+            android:text="报名中"
+            android:textColor="@color/blue_nomal"
+            android:textSize="@dimen/sp_12"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

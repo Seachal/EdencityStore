@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.fragment.MyMoneyFragment">
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_190"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/money_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/back" />
+
+        <com.edencity.store.custum.MyNormalTextView
+            android:id="@+id/change_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改银行卡 >"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_13"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/money"
+            app:layout_constraintEnd_toEndOf="@+id/bank_cade"
+            app:layout_constraintTop_toTopOf="@+id/money" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:paddingHorizontal="@dimen/dp_14"
+            android:paddingVertical="@dimen/dp_11"
+            android:src="@drawable/back_black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view8"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_10"
+            android:layout_marginTop="10dp"
+            android:background="#f5f5f5"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+        <com.edencity.store.custum.MyMediumTextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="20dp"
+            android:text="已结算金额："
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_15"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+            app:layout_constraintStart_toStartOf="@+id/imageView9" />
+
+        <com.edencity.store.custum.MyMediumTextView
+            android:id="@+id/bank_cade"
+            android:layout_width="0dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="6222 ******* 8888"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+            app:layout_constraintEnd_toEndOf="@+id/imageView9"
+            app:layout_constraintStart_toEndOf="@+id/imageView10"
+            app:layout_constraintTop_toTopOf="@+id/imageView10" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout10"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_102"
+            android:background="#f5f5f5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view8">
+
+
+            <com.edencity.store.custum.MyNormalTextView
+                android:id="@+id/count"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_50"
+                android:background="@color/white"
+                android:drawableLeft="@mipmap/count_money"
+                android:drawablePadding="@dimen/dp_8"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/dp_16"
+                android:text="结算"
+                android:textColor="#333333"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.edencity.store.custum.MyNormalTextView
+                android:id="@+id/count_history"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:drawableLeft="@mipmap/count_history"
+
+                android:drawablePadding="@dimen/dp_8"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/dp_16"
+                android:text="结算记录"
+                android:textColor="#333333"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/count" />
+
+        </android.support.constraint.ConstraintLayout>
+
+      <!--
+
+        -->
+
+        <com.edencity.store.custum.MyNormalTextView
+            android:id="@+id/order_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="账单明细"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_15"
+            app:layout_constraintBottom_toBottomOf="@+id/back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/back" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:src="@mipmap/bankicon"
+            app:layout_constraintBottom_toTopOf="@+id/money"
+            app:layout_constraintStart_toStartOf="@+id/imageView9"
+            app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

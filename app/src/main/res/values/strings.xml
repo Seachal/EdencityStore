@@ -1,0 +1,30 @@
+<resources>
+    <plurals name="error_over_count">
+        <item quantity="one">您只能选择1个图片</item>
+        <item quantity="many">您最多只能选择 %1$d 个图片</item>
+    </plurals>
+
+    <!--通用 -->
+    <string name="eden_enterprise_name">伊甸城商业管理公司</string>
+
+    <string name="button_get_verify_code">获取验证码</string>
+
+    <string name="app_name">伊商汇</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="firstpage">首页</string>
+    <string name="vip">汇员中心</string>
+    <string name="shopcart">我的</string>
+    <string name="recharge_card">预付卡充值</string>
+    <string name="card">预付卡</string>
+    <string name="pay_succese">充值成功</string>
+
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+    <string name="register_name_">._0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ</string>
+    <string name="rule_password">`¬!"£$%^*()~=#{}[];'。，？！；;&amp;:,./?/*-+&#060;&#062;&#064;&#038;</string>
+</resources>

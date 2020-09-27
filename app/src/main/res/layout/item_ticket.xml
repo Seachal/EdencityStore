@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/view17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/check_gray" />
+
+    <com.edencity.store.custum.MyMediumTextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="房租-第二期"
+        android:textColor="#333333"
+        android:textSize="@dimen/sp_17"
+        app:layout_constraintStart_toEndOf="@+id/check"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.edencity.store.custum.MyNormalTextView
+        android:id="@+id/sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="36dp"
+        android:text="订单编号：201123498235321421"
+        android:textColor="#333333"
+        android:textSize="@dimen/sp_13"
+        app:layout_constraintBottom_toTopOf="@+id/view17"
+        app:layout_constraintStart_toStartOf="@+id/type"
+        app:layout_constraintTop_toBottomOf="@+id/type" />
+
+    <View
+        android:id="@+id/view17"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_10"
+        android:background="#f5f5f5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.edencity.store.custum.MyMediumTextView
+        android:id="@+id/all_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="12500.00"
+        android:textSize="24sp"
+        android:textColor="@color/blue_nomal"
+        app:layout_constraintBottom_toBottomOf="@+id/type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/type" />
+
+    <com.edencity.store.custum.MyNormalTextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2020-02-25"
+        android:textColor="#333333"
+        android:textSize="@dimen/sp_13"
+        app:layout_constraintBottom_toBottomOf="@+id/sign"
+        app:layout_constraintEnd_toEndOf="@+id/all_price"
+        app:layout_constraintTop_toTopOf="@+id/sign" />
+
+</android.support.constraint.ConstraintLayout>
